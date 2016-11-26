@@ -1,3 +1,5 @@
 .DS_Store
 lib/node_modules
 javascripts/fb-getter.js
+css/styes.css.map
+lib/.sass-cache
