@@ -1,3 +1,14 @@
+body {
+	background-image: url(img/rawr.png);
+}
 
+#weather-wrapper {
+	width: 40%;
+	margin: 0 auto;
+	height: 400px;
+	background: white;
+	border: 5px solid black;
+	padding: 25px;
+}
 
 /*# sourceMappingURL=styles.css.map */
