@@ -5,7 +5,7 @@ body {
 #weather-wrapper {
 	width: 40%;
 	margin: 0 auto;
-	height: 400px;
+	min-height: 400px;
 	background: white;
 	border: 5px solid black;
 	padding: 25px;
