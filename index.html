@@ -1,39 +1,59 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Sharknado</title>
-    <link rel="stylesheet" type="css/text" href="css/styles.css">
+	<title>Sharknado</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"></script>
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
 </head>
-<h1> Sharknados Open Weather API </h1>
-
 <body>
-    <fieldset>
-   	<input id="input" placeholder="ZIPCODE ex. '54321'" type = "text "> 
- 
- 	<button id ="button"> submit </button> 
 
-	</fieldset>
+<!-- EMPTY DIVS FOR EACH VIEW -->
+ <h1>  Sharknado's Daily Forecast  </h1> 
 
-<div id = "three-day view "> </div>
+<h3> "What's going on in your neck of the woods?" </h3>
 
-<div id = "seven-day view "> </div> 
+<br> 
 
-<div id = "login view "> </div>
-
-<div id = "saved view "> </div>
+<div style="max-width: 500px; border: solid blue 2px;" id="_giphy_sharks"></div>
 
 
 
 
+<div id="login-view"></div>
+
+
+<div id="single-day-view">
+
+	<label>Zip Code</label>
+	<input type="text" name="zipcode" id="zipcode" pattern='[0-9]{5}'>
+
+	<button id="submitZip">Submit</button>
+
+</div>
 
 
 
 
-<!--<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js "></script> -->
-<script src="javascripts/app.js "> </script>
-<script src="javascripts/dom-handler.js "> </script>
-<script src="javascripts/user.js "> </script>
-<!--<script src="javascripts/fb-getter.js "> </script>-->
+<div id="three-day-view"></div>
+
+
+<div id="seven-day-view"></div>
+
+
+<div id="saved-view"></div>
+
+
+<!-- SCRIPTS -->
+
+
+
+<script src="javascripts/dom-handler.js"></script>
+<script src="javascripts/fb-getter.js"></script>
+<script src="javascripts/user.js"></script>
+<script src="javascripts/app.js"></script>
+
+<!--Sharknado GIPHY -->
+<script> _gif_artist = "syfy"; _gif_artist_avatar = "https://media.giphy.com/avatars/syfy/ZHeTOxDKV4RE.jpg"; var _giphy = _giphy || []; _giphy.push({id: "sharks",w: 480, h: 270, clickthrough_url: "http://giphy.com/gifs/syfy-sharknado-4-the-4th-awakens-sharks"});var g = document.createElement("script"); g.type = "text/javascript"; g.async = true;g.src = ("https:" == document.location.protocol ? "https://" : "http://") + "giphy.com/static/js/widgets/embed.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(g, s);</script>
 </body>
 </html>
